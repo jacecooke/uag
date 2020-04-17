@@ -99,7 +99,7 @@
 			background-color:;		
 		}
 
-		.storq {
+		#storq {
 			font-weight:bold;
 			text-transform: uppercase;
 		}
@@ -111,7 +111,7 @@
 <body>
 
 	<section>
-		<div class="activity" sheetsu="https://sheetsu.com/apis/v1.0su/014e1fc9d770" sheetsu-limit="1" sheetsu-offset="1">
+		<div id="activity" sheetsu="https://sheetsu.com/apis/v1.0su/014e1fc9d770" sheetsu-limit="1" sheetsu-offset="">
 			<h1>
 				<a class="biglink" href="{{URL}}">{{TAG}}</a> {{EMOJI}}
 			</h1>
@@ -122,7 +122,7 @@
 
 		<h2>
 			<p>
-				<a href="">What else ya got?</a>
+				<a href="javascript:location.reload();">What else ya got?</a>
 			</p>
 		</h2>
 	</section>
@@ -133,6 +133,9 @@
 	</p>
 
 </footer>
+	<script>
+ 		document.getElementById("activity").getAttribute("sheetsu-limit").innerHTML = Math.floor(Math.random() * 3);
+	</script>	
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
