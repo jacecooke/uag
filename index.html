@@ -39,13 +39,10 @@
 		}
 
 		a:hover {
-			color:;
 
 		}
 
-		a:active {
 
-		}
 
 		h1 {
 		  color: #333333;
@@ -55,6 +52,7 @@
 		  margin-top: 0px;
 		  padding-bottom: 0px;
 		  margin-bottom: 0px;
+		  text-decoration:none;
 		}
 
 
@@ -93,18 +91,26 @@
 			margin-top: 150px;
 		}
 
+		#activity:hover h3 {
+			text-decoration:underline;
+		}
+
 		.biglink {
 			margin:0px;
 			background-color:;		
 		}
 
-		#emoji:hover {
-			text-decoration:none;
+		#reload:hover {
+			text-decoration:underline;
 		}
 
 		#storq {
 			font-weight:bold;
-			text-transform: uppercase;
+			text-transform:uppercase;
+		}
+
+		#storq:hover {
+			text-decoration:underline;
 		}
 
 </style>
@@ -127,14 +133,14 @@
 
 		<h2>
 			<p>
-				<a href="javascript:location.reload();">What else ya got?</a>
+				<a id="reload" href="javascript:location.reload();">What else ya got?</a>
 			</p>
 		</h2>
 	</section>
 <footer>
 	
 	<p>
-		With &#9829; from <a class="Storq" href="https://www.storq.com/">STORQ</a>
+		With &#9829; from <a id="storq" href="http://www.storq.com/">storq</a>
 	</p>
 
 </footer>
