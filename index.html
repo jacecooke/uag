@@ -35,12 +35,13 @@
 
 		a {
 			color:#2a2a2a;
-			text-decoration: none;
 			font-weight:bold;
+			text-decoration:none;	
 		}
 
 		a:hover {
 			color:;
+			text-decoration:;
 			text-decoration: underline;
 
 		}
@@ -51,17 +52,31 @@
 
 		h1 {
 		  color: #333333;
-		  font-size: 60px;
+		  font-size: 62px;
 		  font-weight: bold;
 		  text-transform:uppercase;
-		  padding-top: 100px;
+		  margin-top: 150px;
+		  padding-bottom: 0px;
+		  margin-bottom: 0px;
 		}
+
+
 
 		h2 {
 		  color: #333333;
 		  font-size: 24px;
 		  font-weight: bold;
 		  text-transform:;
+		  margin-top:80px;
+		}
+
+		h3 {
+			color:#444444;
+			font-size:;
+			font-weight:normal;
+			margin-top:none;
+			padding-top:none;
+
 		}
 
 		footer {
@@ -70,7 +85,18 @@
 			bottom:0;
 			width:100%;
 			text-align: center;
+			background-color:r;
+		}
+
+		.activity {
+			margin-left:50px;
+			margin-right:50px;
 			background-color:;
+		}
+
+		.biglink {
+			margin:0px;
+			background-color:;		
 		}
 
 		.storq {
@@ -85,11 +111,15 @@
 <body>
 
 	<section>
-		<h1>
-			<p sheetsu="https://sheetsu.com/apis/v1.0su/014e1fc9d770" sheetsu-limit="1" sheetsu-offset="1">
-				<a href="{{URL}}">{{TAG}}</a>
-			</p>
-		</h1>
+		<div class="activity" sheetsu="https://sheetsu.com/apis/v1.0su/014e1fc9d770" sheetsu-limit="1" sheetsu-offset="1">
+			<h1>
+				<a class="biglink" href="{{URL}}">{{TAG}}</a> &#{{EMOJI}};
+			</h1>
+			<h3>
+				{{DESC}}  
+			</h3>
+		</div>
+
 		<h2>
 			<p>
 				<a href="">What else ya got?</a>
