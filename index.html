@@ -52,7 +52,7 @@
 
 		h1 {
 		  color: #333333;
-		  font-size: 62px;
+		  font-size: 60px;
 		  font-weight: bold;
 		  text-transform:uppercase;
 		  margin-top: 150px;
@@ -88,15 +88,21 @@
 			background-color:r;
 		}
 
-		.activity {
+		#activity {
 			margin-left:50px;
 			margin-right:50px;
 			background-color:;
+			display:block;
+			min-height:140px;
 		}
 
 		.biglink {
 			margin:0px;
 			background-color:;		
+		}
+
+		#emoji:hover {
+			text-decoration:none;
 		}
 
 		#storq {
@@ -112,13 +118,14 @@
 
 	<section>
 		<div id="activity" sheetsu="https://sheetsu.com/apis/v1.0su/014e1fc9d770" sheetsu-limit="1" sheetsu-offset="">
-			<h1>
-				<a class="biglink" href="{{URL}}">{{TAG}}</a> {{EMOJI}}
-			</h1>
-			<h3>
-				{{DESC}}  
-				<p id="taco"></p>
-			</h3>
+			<a class="biglink" href="{{URL}}">
+				<h1>
+					{{TAG}} <span id="emoji">{{EMOJI}}</span>
+				</h1>
+				<h3>
+					{{DESC}} &rarr; 
+				</h3>
+			</a>
 		</div>
 
 		<h2>
